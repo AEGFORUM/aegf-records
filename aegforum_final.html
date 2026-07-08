@@ -602,8 +602,8 @@ footer{background:var(--midnight);border-top:1px solid var(--rule);padding:4rem 
     </div>
     <div class="com-grid reveal" id="committeeGrid"></div>
     <div class="reveal" style="max-width:720px;margin:2.5rem auto 0;text-align:center;padding:1.5rem 2rem;border:1px solid rgba(201,162,39,.18);border-radius:6px;background:rgba(201,162,39,.04)">
-      <p style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">Standing Cadence</p>
-      <p style="font-size:.9rem;color:rgba(255,255,255,.55);line-height:1.7">Every Steering Committee and Domain Lead role carries an ongoing mandate, not a one-time contribution. Each role-holder produces at least one visible deliverable per month, posted to the permanent record. This keeps the Forum&rsquo;s structure real rather than ceremonial.</p>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">Standing Cadence (Proposed)</p>
+      <p style="font-size:.9rem;color:rgba(255,255,255,.55);line-height:1.7">The Forum's working expectation is that Steering Committee and Domain Lead roles remain active, ongoing contributions rather than one-time titles &mdash; ideally reflected in visible work shared with the permanent record over time. This cadence is presently a working practice under review by the Steering Committee, not yet a ratified rule.</p>
     </div>
   </div>
 </section>
@@ -612,7 +612,7 @@ footer{background:var(--midnight);border-top:1px solid var(--rule);padding:4rem 
 <section class="gov">
   <div class="container">
     <div class="reveal tc">
-      <span class="eyebrow">Constitutional Governance</span>
+      <span class="eyebrow">Governance Principles</span>
       <div class="sec-title">Rules that protect every member equally.</div>
       <div class="gold-rule c"></div>
     </div>
@@ -653,7 +653,7 @@ footer{background:var(--midnight);border-top:1px solid var(--rule);padding:4rem 
     </div>
     <div class="obs-grid reveal">
       <div class="obs-col"><h3>Observers</h3><div class="obs-pills"></div></div>
-      <div class="obs-col"><h3>Advisors</h3><div class="obs-pills"><div class="obs-pill"><span class="obs-d"></span>Moad Abu-Alian, PhD, PMP &mdash; Enterprise Implementation</div></div></div>
+      <div class="obs-col"><h3>Advisors</h3><div class="obs-pills"></div></div>
       <div class="obs-col"><h3>Pipeline</h3><div class="obs-pills"></div></div>
       <div class="obs-col"><h3>Declined with Respect</h3><div class="obs-pills"></div></div>
     </div>
@@ -802,7 +802,7 @@ setInterval(rClocks, 1000);
 var MEMBERS = [
   {name:'Dani Danwin', org:'TrustLayers', domain:'Pre-Runtime Execution Governance Infrastructure', chain:'Evidence \u2192 Trust', role:'Registry Steward', s:true, b:true},
   {name:'Frank Schouten', org:'', domain:'Governance Neutrality \u00B7 Authority Accountability \u00B7 Stakeholder Recognition', chain:'Boundary conditions across all transitions', role:'Structural Governance Lead \u00B7 Interim Steering Committee', s:true, b:false},
-  {name:'Harold Alberto Nunes Rodelo', org:'OMNIX QUANTUM', domain:'Post-Quantum Cryptographic Infrastructure and Open Technical Standards for AI Decision Governance', chain:'Full lifecycle', role:'Technical Standards Lead', s:true, b:true},
+  {name:'Harold Alberto Nunes Rodelo', org:'OMNIX QUANTUM', domain:'Post-Quantum Cryptographic Infrastructure and Open Technical Standards for AI Decision Governance', chain:'Full lifecycle', role:'Technical Rigor Steward', s:true, b:true},
   {name:'Arvind SR', org:'', domain:'Enterprise Architecture · Governance Architecture · AI Governance · Adoption · Governance state transitions and enterprise execution architecture', chain:'Governance state transitions and enterprise execution architecture', role:'Enterprise Architect · Interim Steering Committee', s:true, b:false},
   {name:'Tim Zlomke', org:'', domain:'Independent AI Governance Practice \u00B7 Governance, Continuity, and Consequence Systems', chain:'State transitions, execution governance, continuity, and consequence-bearing systems', role:'Founding Member', s:false, b:false},
   {name:'Saad Muzafar', org:'Altivon Labs', domain:'AI Product Architecture \u00B7 SaaS Systems \u00B7 Enterprise Workflow Design \u00B7 Runtime Governance Adoption \u00B7 Product Structuring', chain:'Session architecture and process design', role:'Session Architect \u00B7 Phase 1 / Session 01 Design', s:false, b:false},
@@ -827,7 +827,7 @@ var MEMBERS = [
   {name:'Janina White', org:'Independent', domain:'Legal and Evidential Architecture of AI Execution Governance \u00B7 Justice-System Context', chain:'Evidence \u2192 Trust \u2192 Authority \u2192 Permission \u2192 Consequence', role:'Founding Member / Independent Contributor', s:false, b:false},
   {name:'James David', org:'Independent', domain:'Institutional Memory Governance \u00B7 Knowledge Qualification \u00B7 Reconstruction Fidelity', chain:'Evidence (Knowledge Formation Layer)', role:'Founding Member', s:false, b:false},
   {name:'Mushtaque Ahmed Rajput', org:'VITT Protocol & Agent Trust Fabric (ATF)', domain:'Pre-Execution Runtime Boundary \u00B7 Structural Forensics \u00B7 Multi-Script Guardrails', chain:'Permission \u2192 Action', role:'Founding Member', s:false, b:true},
-  {name:'Haseeb', org:'', domain:'AI-Powered SaaS Development \u00B7 Agentic Systems Production Deployment', chain:'Permission \u2192 Action', role:'Founding Member', s:false, b:true}];
+  {name:'Haseeb', org:'Seebify', domain:'AI-Powered SaaS Development \u00B7 Agentic Systems Production Deployment', chain:'Permission \u2192 Action', role:'Founding Member', s:false, b:true}];
 function renderMembers(filter) {
   var list = MEMBERS;
   if (filter === 'steering') list = MEMBERS.filter(function(m) { return m.s; });
@@ -854,7 +854,7 @@ var COM = [
   {name:'Raheem Larry Babatunde', org:'VeriSigil AI \u00B7 Lagos, Nigeria', role:'Convener', mandate:'Holds the circle together, chairs the Assembly, represents the forum externally. Not the owner. The convener.'},
   {name:'Tim Zlomke', org:'Independent Practitioner', role:'Intellectual Framework Lead', mandate:'Stewarding the framework as a neutral and evolving lens, not as an authority over the work of others, nor a mechanism for driving convergence toward any particular architecture.'},
   {name:'Arvind SR', org:'Enterprise Architecture', role:'Enterprise Adoption Lead', mandate:'Technical governance mechanisms must coexist with enterprise architecture, operating models, decision structures, accountability frameworks, and organisational realities.'},
-  {name:'Harold Nunes', org:'OMNIX QUANTUM', role:'Technical Standards Lead', mandate:'If something is technically overclaimed or imprecise, I will flag it. That is the standard the work deserves.'},
+  {name:'Harold Nunes', org:'OMNIX QUANTUM', role:'Technical Rigor Steward', mandate:'If something is technically overclaimed or imprecise, I will flag it. That is the standard the work deserves.'},
   {name:'Dani Danwin', org:'TrustLayers', role:'Registry Steward', mandate:'Stewardship rather than authority \u2014 ensuring every contribution is represented faithfully, in the member\u2019s own words.'},
   {name:'Frank Schouten', org:'Structural Governance', role:'Structural Governance', mandate:'Neutrality must be structural rather than personal. No individual should hold veto authority over others. The 75% supermajority rule protects this.'},
   {name:'Saad Muzafar', org:'Altivon Labs', role:'Session Architect Phase 1', mandate:'Individual contributions first, observed themes second, no forced consensus or recommendations at this stage.'},
